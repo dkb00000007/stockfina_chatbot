@@ -1,0 +1,22 @@
+# --- Core Streamlit and AI ---
+streamlit==1.33.0 # Replace with your specific streamlit version from pip freeze
+google-generativeai==0.5.2 # Replace with your specific google-generativeai version
+
+# --- Data Handling and Finance ---
+pandas==2.1.4 # Replace with your specific pandas version
+yfinance==0.2.38 # Replace with your specific yfinance version
+
+# --- Dependencies (Often pulled automatically, but good to specify for deployment) ---
+# yfinance often relies on these. Check pip freeze if they are installed.
+requests>=2.26.0 # yfinance dependency - replace with your specific version if desired
+lxml>=4.9.1 # yfinance dependency for parsing - replace with your specific version if desired
+numpy>=1.23.5 # pandas dependency - replace with your specific version if desired
+
+# --- Other potential dependencies (usually handled, but check pip freeze) ---
+# protobuf>=3.19.0 # Often a dependency of google libraries
+# google-api-python-client # Often a dependency of google libraries
+# pytz # Dependency of pandas
+# python-dateutil # Dependency of pandas
+
+# It's generally best practice to include versions found via 'pip freeze'
+# in your active virtual environment to ensure reproducibility.
